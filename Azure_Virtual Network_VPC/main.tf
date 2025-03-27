@@ -11,18 +11,18 @@ provider "azurerm" {
   # Configuration options
 }
 
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
+resource "azurerm_resource_group" "Ashvika" {
+  name     = "Ashvika"
   location = "West Europe"
 }
 
-resource "azurerm_network_security_group" "example" {
+resource "azurerm_network_security_group" "Ashvika_sg" {
   name                = "example-security-group"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
 }
 
-resource "azurerm_virtual_network" "example" {
+resource "azurerm_virtual_network" "Ashvika_resource" {
   name                = "example-network"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
